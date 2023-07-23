@@ -38,7 +38,7 @@ const HomeSectionComponent = () => {
   return (
     <View style={styles.sectionContainer}>
       {/*  */}
-      <Text style={styles.sectionTitle}>Điện thoại - Máy tính bảng</Text>
+      <Text style={styles.sectionTitle}>Máy tính - Macbook</Text>
       {/*  */}
       <Image source={section_banner} style={styles.sectionImage} />
       {/*  */}
@@ -46,9 +46,7 @@ const HomeSectionComponent = () => {
         <View style={styles.filterContainer}>
           {[
             "Tất cả",
-            "Điện thoại SmartPhone",
-            "Máy tính bảng",
-            "Điện thoại",
+            "Macbook"
           ].map((e, index) => (
             <View
               key={index.toString()}
@@ -82,12 +80,12 @@ const HomeSectionComponent = () => {
           ].map((e, index) => (
             <View key={index.toString()}>
               <ProductItem
-                name="Điện thoại Vsmart Bee (Smart Bee)"
+                name="Macbook M2 Pro"
                 image={e.image1}
                 price="699.000đ"
               />
               <ProductItem
-                name="Điện thoại Vsmart Joy 2 Vsmart Joy 2"
+                name="Macbook M1 Pro"
                 image={e.image2}
                 price="699.000đ"
               />

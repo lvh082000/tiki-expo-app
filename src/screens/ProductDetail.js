@@ -1,14 +1,15 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 
 const ProductDetailScreen = () => {
   // Hard-coded product details for demonstration
   const product = {
-    name: "Sản phẩm A",
-    price: "100,000 VND",
-    description: "Mô tả sản phẩm A: Đây là sản phẩm A mô tả...",
+    name: "Macbook M1 Pro",
+    price: "36,999,000 VND",
+    description:
+      "Mô tả sản phẩm: Đây là Macbook M1 Pro với cấu hình mạnh mẽ đáp ứng cho tất cả mọi nhu cầu làm việc nặng",
     imageURL:
-      "https://vuongkhang.com/v1/upload/28/Surface-Pro-8/1.png/1000x0.webp", // Replace this with the actual image URL
+      "https://macstores.vn/wp-content/uploads/2021/10/macbook-pro-16-inch-space-gray-m1-pro.jpg",
   };
 
   return (
