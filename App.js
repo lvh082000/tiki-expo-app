@@ -8,9 +8,23 @@ import HomeScreen from "./src/screens/HomeScreen";
 import ProfileScreen from "./src/screens/ProfileScreen";
 import NotificationScreen from "./src/screens/NotificationScreen";
 import LoginScreen from "./src/screens/LoginScreen";
+import ProductDetailScreen from "./src/screens/ProductDetail"; // Import the new screen
 
 const Tab = createBottomTabNavigator();
 const MainStack = createStackNavigator();
+const ProductDetailStack = createStackNavigator(); // Create a new StackNavigator for ProductDetailScreen
+
+const ProductDetailStackScreen = () => {
+  return (
+    <ProductDetailStack.Navigator>
+      <ProductDetailStack.Screen
+        name="ProductDetail"
+        component={ProductDetailScreen}
+      />
+      {/* Add other screens here if needed */}
+    </ProductDetailStack.Navigator>
+  );
+};
 
 const MainStackScreen = () => {
   return (
@@ -19,6 +33,11 @@ const MainStackScreen = () => {
         name="Main"
         component={TabNavigator}
         options={{ headerShown: false }}
+      />
+      <MainStack.Screen
+        name="ProductDetail" // Set the screen name for ProductDetailScreen
+        component={ProductDetailStackScreen}
+        options={{ title: "Chi tiết sản phẩm" }} // Set the header title
       />
     </MainStack.Navigator>
   );
@@ -66,7 +85,7 @@ const App = () => {
 
   // Function to handle login
   const handleLogin = (email, password) => {
-    if (email === "admin@gmail.com" && password === "123123")
+    // if (email === "admin@gmail.com" && password === "123123")
       setUserLoggedIn(true);
   };
   return (
