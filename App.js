@@ -37,7 +37,7 @@ const MainStackScreen = () => {
       <MainStack.Screen
         name="ProductDetail" // Set the screen name for ProductDetailScreen
         component={ProductDetailStackScreen}
-        options={{ title: "Chi tiết sản phẩm" }} // Set the header title
+        options={{ headerShown: false }}
       />
     </MainStack.Navigator>
   );
@@ -86,7 +86,7 @@ const App = () => {
   // Function to handle login
   const handleLogin = (email, password) => {
     // if (email === "admin@gmail.com" && password === "123123")
-      setUserLoggedIn(true);
+    setUserLoggedIn(true);
   };
   return (
     <NavigationContainer>
