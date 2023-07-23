@@ -13,7 +13,7 @@ const NotificationItem = ({item}) => (
             backgroundColor: item.type === 1 ? '#fc820a' : '#dc3988',
           },
         ]}>
-        <Text>aaa</Text>
+        <Text>N</Text>
       </View>
       <View style={styles.itemTopTextContainer}>
         <Text style={styles.itemName}>{item.name}</Text>
@@ -37,10 +37,10 @@ const NotificationScreen = () => {
             <View style={styles.activeMark} />
           </View>
           <View style={styles.buttonInactiveContainer}>
-            <Text>aaa</Text>
+            <Text>Home</Text>
           </View>
           <View style={styles.buttonInactiveContainer}>
-            <Text>aaa</Text>
+            <Text>BackUP</Text>
           </View>
         </View>
         <View style={styles.listContainer}>

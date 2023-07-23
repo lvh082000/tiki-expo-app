@@ -14,7 +14,7 @@ const HomeScreen = () => {
         </View>
         {/*  */}
         <View style={styles.cartContainer}>
-          <Text style={styles.inputText}>aaa</Text>
+          <Text style={styles.inputText}>Tìm</Text>
         </View>
       </View>
       {/*  */}
